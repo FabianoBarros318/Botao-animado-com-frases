@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+    background: #27282c;
+    flex-direction: column;
+    gap: 50px;
+}
+a{
+    position: relative;
+    background: #fff;
+    color:  #fff;
+    text-decoration: none;
+   text-transform: uppercase;
+   font-size: 1.5em;
+   letter-spacing: 0.1em;
+   font-weight: 400;
+   padding: 10px 30px;
+   transition: 0.5s;
+
+}
+a:hover
+{
+    background: var(--crl);
+    color: var(--crl);
+letter-spacing: 0.25em;
+box-shadow: 0 0  35px var(--crl);
+}
+a:before
+{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #27282c;
+    
+}
+a span
+{
+    position: relative;
+    z-index: 1;
+}
+a i
+{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+a i::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 10px;;
+    height: 4px;
+    background: #27282c;
+    transform: translate(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+a:hover i::before
+{
+    width: 20px;
+    left: 20%;
+}
+
+a i::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 10px;;
+    height: 4px;
+    background: #27282c;
+    transform: translate(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+a:hover i::before
+{
+    width: 20px;
+    left: 20%;
+}
+
+a i::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 10px;;
+    height: 4px;
+    background: #3d4258;
+    transform: translate(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+a:hover i::after
+{
+    width: 20px;
+    left: 80%;
+}
+footer
+{
+   position: relative;
+   display: inline-block;
+   text-transform: uppercase;
+   letter-spacing: 4px;
+   text-decoration: none;
+   font-size: 13px;
+   overflow: hidden;
+   transition: 0.5s;
+   padding: 10px 15px;
+   font-family: consolas;
+   justify-content: center;
+   align-items: center;
+   background: #031321;
+   min-width: 50vh;
+
+}
+footer:hover
+{
+    color: 255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+transition-delay: 1s;
+}
+
+a footer
+{
+    position: absolute;
+    display: block;
+}
+a footer:nth-child(1)
+{
+    top: 0;
+    left: -100%;
+    width: 100%;
+height: 2px;
+background: linear-gradient(90deg,trasparente,#2196f3);
+}
