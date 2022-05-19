@@ -1,6 +1,6 @@
 # Botao-animado-com-frases
 
-# Barra-de-progresso 
+
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/FabianoBarros318/Barra-de-progresso/blob/main/LICENSE) 
 
 # Sobre o projeto
